@@ -19,6 +19,12 @@ html {
   font-size: 62.5%;
 }
 
+.main {
+  position: absolute;
+  top: 5rem;
+  left: 30rem;
+}
+
 .form__group {
   margin-bottom: 1rem;
 }
@@ -102,4 +108,50 @@ html {
   left: 0;
   z-index: -1;
   transition: all 0.5s;
+}
+
+.feature-box {
+  background-color: rgba(147, 133, 133, 0.4);
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 2px;
+  box-shadow: 0 1.5rem 4rem rgb(24, 22, 22, 0.1);
+}
+
+.row {
+  max-width: 114rem;
+  margin: 0 auto;
+}
+.row:not(:last-child) {
+  margin-bottom: 1.8rem;
+}
+.row::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.row [class^='col-'] {
+  float: left;
+}
+.row [class^='col-']:not(:last-child) {
+  margin-right: 6rem;
+}
+.row .col-1-of-2 {
+  width: calc((100% - 6rem) / 2);
+}
+.row .col-1-of-3 {
+  width: calc((100% - 2 * 6rem) / 3);
+}
+.row .col-2-of-3 {
+  width: calc(((100% - 2 * 6rem) / 3) * 2 + 6rem);
+}
+.row .col-1-of-4 {
+  width: calc((100% - 3 * 6rem) / 4);
+}
+.row .col-2-of-4 {
+  width: calc(((100% - 3 * 6rem) / 4) * 2 + 6rem);
+}
+.row .col-3-of-4 {
+  width: calc(((100% - 3 * 6rem) / 4) * 3 + 12rem);
 }
