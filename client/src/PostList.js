@@ -21,8 +21,8 @@ function PostList() {
     return (
       <div className="row">
         <div className="col-2-of-4">
-          <div key={post.id} className="feature-box">
-            <h3>{post.title}</h3>
+          <div className="feature-box">
+            <h3 key={post.id}>{post.title}</h3>
             <CommentList postId={post.id} />
             <CommentCreate postId={post.id} />
           </div>
