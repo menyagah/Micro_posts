@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import PostCreate from './postCreate';
+import PostCreate from './PostCreate';
 import PostList from './PostList';
 
 function App() {
